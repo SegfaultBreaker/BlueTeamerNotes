@@ -89,6 +89,7 @@ Persistance attemps like :
 - usermod - Indicates the modifcation of user permissions or groups.
 - groupadd - Indicates the creation of a new user group. 
 
+Or other command like curl, get... (all commands that can be used for "remotely" downloading files.
 
 ## wtmp
 
