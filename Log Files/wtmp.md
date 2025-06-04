@@ -44,3 +44,28 @@ Took from the website : https://www.kazamiya.net/en/bulk_extractor-rec/utmp
 | **sec**    | The event timestamp in seconds (based on your system's timezone, not the source system's).           |
 | **usec**   | The microsecond part of the timestamp related to the login/logout event.                              |
 | **Addr**   | Additional address info, such as an IP address for remote connections.                                |
+
+
+
+
+# Usefull information that can be retrieved with this tool.
+
+
+
+## wtmp
+
+"USER"  "3120"  "pts/0"  "ts/1"  "john"  "203.0.113.45"  "0"  "0"  "2024/05/28 10:14:22"  "312456"  "203.0.113.45"
+
+| Field             | Value             | Description                                               |
+|------------------|-------------------|-----------------------------------------------------------|
+| **Type**         | `"USER"`          | Type of event (user login)                                |
+| **PID**          | `"3120"`          | Process ID of the session                                 |
+| **Line**         | `"pts/0"`         | Terminal line used (pseudo-terminal)                      |
+| **ID**           | `"ts/1"`          | Line ID (used for internal session tracking)              |
+| **User**         | `"john"`          | Username who logged in                                    |
+| **Host**         | `"203.0.113.45"`  | Remote IP address of the user                             |
+| **Exit Code**    | `"0"`             | Exit status (0 = successful)                              |
+| **Session**      | `"0"`             | Session ID (can vary depending on the system)             |
+| **Login Time**   | `"2024/05/28 10:14:22"` | Timestamp of login                               |
+| **Microseconds** | `"312456"`        | Microsecond part of the login timestamp                   |
+| **Addr**         | `"203.0.113.45"`  | Redundant IP field (used in some UTMP/WTMP tools)         |
