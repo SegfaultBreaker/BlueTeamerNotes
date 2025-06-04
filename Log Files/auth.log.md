@@ -23,7 +23,7 @@ What it looks like ?
 
 
 
-# Usefull information that can be retrieved with those tools.
+# Usefull information that can be retrieved with this tool.
 
 ## Auth.log 
 
