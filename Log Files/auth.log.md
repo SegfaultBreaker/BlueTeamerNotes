@@ -20,3 +20,22 @@ What it looks like ?
 | **Source IP**   | from 102.45.76.32    | The IP address from which the login request originated.                        |
 | **Source Port** | port 55874           | The source port used by the remote client during the attempt.                  |
 | **Protocol**    | ssh2                 | The SSH protocol version (SSH-2) used during the connection attempt.           |
+
+
+
+# Usefull information that can be retrieved with those tools.
+
+## Auth.log 
+
+Information such as multiple connection that were made from a single source in a short time frime (could indicate a bruteforce login attempt): 
+![{C331FAC4-33CF-452F-A8EF-E02ABD5C3FEC}](https://github.com/user-attachments/assets/f5e50f10-43a8-4de4-a35c-d2c94450719f)
+
+Tracking login / logout for sensitive users timestemp and SSH session id:
+![image](https://github.com/user-attachments/assets/c7e8d30c-fcd8-40e5-a7d9-787f3ddc17bd)
+
+Persistance attemps like : 
+- useradd - Indicates a user has been added to the system.
+- usermod - Indicates the modifcation of user permissions or groups.
+- groupadd - Indicates the creation of a new user group. 
+
+Or other command like curl, get... (all commands that can be used for "remotely" downloading files.
