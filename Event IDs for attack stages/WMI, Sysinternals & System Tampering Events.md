@@ -1,3 +1,5 @@
+## WMI, Sysinternals & System Tampering Events
+
 | Event ID | Provider                                 | Description                                                       | Security Use Case                                                    |
 |----------|------------------------------------------|-------------------------------------------------------------------|----------------------------------------------------------------------|
 | 5861     | Microsoft-Windows-WMI-Activity           | WMI consumer started                                              | Detect WMI-based persistence or execution                           |
