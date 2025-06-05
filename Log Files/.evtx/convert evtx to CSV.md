@@ -1,4 +1,4 @@
-## Here is how you can use all your evtx file that you could retrieved for analysis gathered and parsed in csv format.
+## Here is how you can use all your evtx file that you could retrieved for analysis, gathered and parsed in one csv format file.
 
 ### First
 You'll need to download this tool : https://download.ericzimmermanstools.com/net9/EvtxECmd.zip (if you dont trust the link, just visit the website)
