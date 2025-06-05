@@ -9,6 +9,7 @@
 | Microsoft-Windows-Privacy-Auditing      | Audits privacy-related settings              | Tracks modifications to sensitive privacy settings          |
 | Microsoft-Windows-User Device Registration | Device registration (e.g. Azure AD join)   | Detects hybrid or cloud onboarding                          |
 | Microsoft-Windows-WebAuthN              | Web-based (FIDO2) login logging              | Monitors hardware-backed authentication                     |
+| Microsoft-Windows-SmartScreen | Windows event provider that logs SmartScreen activities and alerts related to application and file reputation filtering | Monitoring and auditing SmartScreen actions: blocking files, warning on unrecognized apps, and analyzing detected threats |
 
 🖥️ System & Kernel Events
 
