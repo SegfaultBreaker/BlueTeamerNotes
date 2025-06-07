@@ -15,3 +15,23 @@ Volatility enables users to interact with memory dump files in various ways, suc
 - Dumping SSL/TLS certificates and cryptographic keys
 - And much more
 
+## Volatility – Operational Concept
+
+Profiles are required for Volatility to interpret memory images accurately. Each memory image must be associated with a specific operating system profile that matches the system it was captured from.
+
+### Initial step – imageinfo command
+
+- Command: volatility -f memdump.mem imageinfo
+
+The purpose of this command : Analyzes the memory dump to determine details such as operating system, service pack, and system architecture (32-bit or 64-bit).
+
+The output suggests the most appropriate profile to use for further analysis.
+
+### Example profiles:
+![image](https://github.com/user-attachments/assets/1b4b3d42-6166-487d-8f8e-3883ecbd2d42)
+
+- Windows 7 SP1 64-bit → Win7SP1x64
+- Windows XP SP2 32-bit → WinXPSP2x86
+
+### Requirement for all subsequent commands:
+- The correct profile must be specified using the --profile= parameter.    /!\ If the profile is not provided, Volatility commands will not function.
